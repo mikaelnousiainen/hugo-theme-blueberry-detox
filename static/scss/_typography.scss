@@ -208,14 +208,17 @@ ul,
 ol {
     margin-top: 0;
     margin-bottom: $p-margin-bottom;
-    list-style-type: none;
-    text-align: center;
-    padding-left: 0;
-    padding-top: 2em;
+    padding-left: 1em;
     ul,
     ol {
         margin-bottom: 0;
     }
+}
+
+li {
+  p {
+    margin: 0;
+  }
 }
 
 

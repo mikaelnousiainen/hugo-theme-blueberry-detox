@@ -24,9 +24,9 @@
 
 
 .blog-title {
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 6px;
-    font-size: 75px;
+    font-size: 35px;
 }
 
 
@@ -34,7 +34,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     color: $black-30;
-    font-size: 80%;
+    font-size: 150%;
 }
 
 
@@ -79,8 +79,8 @@
 .post-footer {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 80%;
+    letter-spacing: 2px;
+    font-size: 90%;
     margin-top: 30px;
 }
 
