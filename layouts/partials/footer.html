@@ -1,8 +1,11 @@
     <footer id="site-footer">
         <div class="container">
+            <a href="https://twitter.com/{{ .Site.Params.twitter_name }}" title="Twitter @{{ .Site.Params.twitter_name }}"><span class="tooltip"><i class="fa fa-twitter"></i></span></a>
+            <a href="https://github.com/{{ .Site.Params.github_name }}" title="GitHub"><span class="tooltip"><i class="fa fa-github"></i></span></a>
+            <a href="mailto:&#109;&#105;&#107;&#097;&#101;&#108;&#064;&#048;&#120;&#102;&#101;&#101;&#100;&#046;&#116;&#101;&#099;&#104;" title="Contact via email"><span class="tooltip"><i class="fa fa-envelope"></i></span></a>
             <a href="{{ .Site.BaseURL }}index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
-            <section>&copy; <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a> 2015 | All rights reserved</section>
-            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+            <section>&copy; <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a> 2016 | All rights reserved</section>
+            <section>Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
         </div>
     </footer>
 
