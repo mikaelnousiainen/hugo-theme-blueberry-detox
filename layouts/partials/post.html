@@ -4,6 +4,14 @@
         <h3 class="p-post-title">{{ .Title }}</h3>
     </header>
 
+    {{ if isset .Params "featured_image" }}
+        <div class="image">
+            <a href="{{ .Params.featured_image_full }}">
+                <img src="{{ .Params.featured_image }}">
+            </a>
+        </div>
+    {{ end }}
+
     <section class="post-content">
         {{ .Content }}
     </section>

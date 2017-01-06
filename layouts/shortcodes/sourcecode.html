@@ -1,0 +1,5 @@
+<div class="sourcecode-container">
+    <pre class="sourcecode {{ with .Get "linenumbers" }}line-numbers {{ end }}language-{{ .Get "language" }}" {{with .Get "startinglinenumber"}}data-start="{{ . }}"{{end}}>
+        <code class="language-{{ .Get "language" }}">{{ .Inner }}</code>
+    </pre>
+</div>
