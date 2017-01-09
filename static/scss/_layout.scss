@@ -5,7 +5,7 @@
 
 // This is where your main styling goes, including whatever isn't covered by the modular stylesheets. It's usually divided up by sections of the website (header, body, footer, etc) in order to remain organized.
 
-$image-width: 600px;
+$image-width: 480px;
 $image-border-width: 5px;
 
 $image-list-width: 160px;
@@ -71,6 +71,8 @@ span.image, div.image {
     height: $image-list-height + 2 * $image-list-border-width;
     max-width: 100%;
     max-height: 100%;
+
+    background-color: #dddddd;
 
     border: $image-list-border-width solid #dddddd;
     border-radius: $image-list-border-width;
