@@ -1,3 +1,5 @@
+{{ $baseURL := .Site.BaseURL }}
+
 <article class="{{ .Type }}">
     <header class="post-header">
         <div class="image-list">
@@ -23,9 +25,11 @@
             {{ if .Site.Params.disqusShortname }}
             <a href="{{ .Permalink }}#comments"><i class="fa fa-comment"></i> Comments</a>
             {{ end }}
-            {{ with.Params.tags }}
-            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
-            	{{ delimit  . ", " }}
+            {{ if .Params.tags }}
+                &nbsp;&nbsp;<i class="fa fa-tag"></i>
+                {{ range .Params.tags }}
+                <a href="{{ $baseURL }}/tags/{{ . | urlize }}">#{{ . }}</a>
+                {{ end }}
             {{ end }}
         </span>
     </footer>

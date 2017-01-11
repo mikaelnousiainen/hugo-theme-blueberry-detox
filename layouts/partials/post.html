@@ -1,3 +1,4 @@
+{{ $baseURL := .Site.BaseURL }}
 
 <article class="{{ .Type }}">
 	<header class="post-header">
@@ -51,10 +52,12 @@
                 </span>
             </section>
 
-            {{ with .Params.tags }}
-            	<span class="f-post-tags"><i class="fa fa-tag"></i>
-            	{{ delimit  . ", " }}
-            	</span>
+            {{ if .Params.tags }}
+                <span class="f-post-tags"><i class="fa fa-tag"></i>
+                    {{ range .Params.tags }}
+                    <a href="{{ $baseURL }}/tags/{{ . | urlize }}">#{{ . }}</a>
+                    {{ end }}
+                </span>
             {{ end }}
         </section>
         {{ partial "disqus.html" . }}        
