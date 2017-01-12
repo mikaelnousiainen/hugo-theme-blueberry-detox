@@ -3,11 +3,11 @@
 <article class="{{ .Type }}">
     <header class="post-header">
         <div class="image-list">
-            <!-- <a href="{{ .Permalink }}"> -->
+            <a href="{{ .Permalink }}">
                 {{ with .Params.featured_image }}
                 <img src="{{ . }}">
                 {{ end }}
-            <!-- </a> -->
+            </a>
         </div>
 
         <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -28,7 +28,7 @@
             {{ if .Params.tags }}
                 &nbsp;&nbsp;<i class="fa fa-tag"></i>
                 {{ range .Params.tags }}
-                <a href="{{ $baseURL }}/tags/{{ . | urlize }}">#{{ . }}</a>
+                <a href="{{ $baseURL }}tags/{{ . | urlize }}">#{{ . }}</a>
                 {{ end }}
             {{ end }}
         </span>

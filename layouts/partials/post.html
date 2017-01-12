@@ -7,7 +7,7 @@
 
     {{ if isset .Params "featured_image" }}
         <div class="image">
-            <a href="{{ .Params.featured_image_full }}">
+            <a href="{{ .Params.featured_image_full }}" data-lightbox="featured">
                 <img src="{{ .Params.featured_image }}">
             </a>
         </div>
@@ -55,7 +55,7 @@
             {{ if .Params.tags }}
                 <span class="f-post-tags"><i class="fa fa-tag"></i>
                     {{ range .Params.tags }}
-                    <a href="{{ $baseURL }}/tags/{{ . | urlize }}">#{{ . }}</a>
+                    <a href="{{ $baseURL }}tags/{{ . | urlize }}">#{{ . }}</a>
                     {{ end }}
                 </span>
             {{ end }}
