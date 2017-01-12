@@ -80,6 +80,11 @@ span.image, div.image {
     position: relative;
     overflow: hidden;
 
+    @media (max-width: 550px) {
+        margin: 0 auto;
+        float: none !important;
+    }
+
     img {
         max-width: none;
         max-height: none;
