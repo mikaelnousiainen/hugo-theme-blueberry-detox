@@ -133,14 +133,22 @@ pre.sourcecode {
 }
 
 
+.site-header-container {
+    width: 100%;
+    margin: auto;
+}
+
+
 .blog-title {
     text-transform: none;
     letter-spacing: 6px;
-    font-size: 35px;
+    font-size: 60px;
 }
 
 
 .blog-description {
+    padding: 0.5em 0;
+    background-color: #333333;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: $black-30;
