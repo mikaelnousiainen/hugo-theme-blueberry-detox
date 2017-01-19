@@ -20,13 +20,13 @@
         {{ with $.Params.featured_image }}<meta itemprop="image" content="{{ . | absURL }}" />{{ end }}
 
 	{{ with .Site.Params.twitter_name }}
-        <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@{{ . }}">
         <meta name="twitter:creator" content="@{{ . }}">
         <meta name="twitter:domain" content="{{ $.Site.BaseURL }}">
         <meta name="twitter:title" content="{{ $.Title }}">
         <meta name="twitter:description" content="{{ if $.IsNode }}{{ with $.Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with $.Description }}{{ . }}{{ end }}{{ end }}">
-        {{ with $.Params.featured_image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+        {{ with $.Params.featured_image_full }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 	{{ end }}
 
         <meta property="og:site_name" content="{{ .Site.Title }}">
