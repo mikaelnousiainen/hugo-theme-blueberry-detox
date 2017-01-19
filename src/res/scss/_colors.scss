@@ -16,16 +16,16 @@ $black-90:                      darken(#fff, 90%);
 
 
 // Main Colors
-$color-primary:                 #4db146;
+$color-primary:                 #2d76b1;
 $color-secondary:               #e97c5f;
 $color-tertiary:                #f0ad4e;
 $color-accent:                  #d9534f;
 
 
 // Text
-$color-text:                    $black-80;
+$color-text:                    $black-90;
 
 
 // Links
-$color-link:                    $black-80;
+$color-link:                    $color-primary;
 $color-link-hover:              darken($color-link, 15%);

@@ -145,7 +145,6 @@ pre.sourcecode {
     font-size: 60px;
 }
 
-
 .blog-description {
     padding: 0.5em 0;
     background-color: #333333;
@@ -192,7 +191,7 @@ pre.sourcecode {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 30px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 
@@ -229,7 +228,7 @@ pre.sourcecode {
     }
 
     a:hover {
-        color: $black-10;
+        color: $black-30;
         border-bottom: 1px solid;
     }
 }

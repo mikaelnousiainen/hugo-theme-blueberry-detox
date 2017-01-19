@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $headings-font-weight;
     line-height: 1; // this fixes huge spaces when a heading wraps onto two lines
     margin-top: 0;
+    padding-top: 1em;
 	text-rendering: optimizeLegibility; // voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering
 }
 
@@ -155,6 +156,7 @@ h6  {
 
 // bottom margin for paragraphs
 p {
+    font-size: 112.5%;
 	margin: auto auto $p-margin-bottom;
 }
 
@@ -194,6 +196,14 @@ a:hover {
 
 p a, p a:visited { 
     line-height: inherit; 
+}
+
+a.text-link {
+  color: $color-text !important;
+}
+
+a:hover.text-link {
+  color: $black-30 !important;
 }
 
 
